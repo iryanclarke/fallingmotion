@@ -1,0 +1,134 @@
+/*------------------- Default All Elements ---------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 100;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: text-top;
+	text-align: left;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul, li {
+	list-style: none;
+}
+
+#content #welcome li { 
+	display: inline; 
+}
+
+#content #welcome img { 
+	display: inline; 
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*------------------- Extended base styles  ---------------------*/
+
+html { 
+
+	}
+body {
+	background: #D1D2D4;
+	overflow-x: hidden;
+	line-height: 1.5;
+	color: #262261;
+	font-size: 14px;
+	font-family: Arial,sans-serif;
+	
+}
+h1 {
+	color: #262261;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+}
+a, a:link,
+a:active,
+a:visited {
+	-webkit-transition: color 0.25s ease-out;
+	-moz-transition: color 0.25s ease-out;
+	-o-transition: color 0.25s ease-out;
+	transition: color 0.25s ease-out;
+	color:#27A9E1;
+	outline: none;
+	text-decoration:none;
+	}
+	a:hover { 
+		color:#FFF;
+		}
+img {
+	display: inline-table;
+	white-space: normal;
+	}
+p {
+	margin:1em 0;
+	}
+
+/*------------------- Top Navigation ---------------------*/
+
+#wrapper {
+	position: relative;
+}
+#branding {
+	width: 100%;
+	background: #262261;
+	position: fixed;
+	}
+	#branding h1 {
+		padding: 0px 45px;
+		margin: 0 auto;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: bold;
+		font-family: 'Patrick Hand SC', cursive;
+	}
+
+#content{
+	padding:120px;
+}
+
+h1{
+	font-family: 'Patrick Hand SC', cursive;
+	font-size:24px;
+}
+
+h2{
+	font-family: 'Patrick Hand SC', cursive;
+	font-size:20px;
+	text-align:center;
+}

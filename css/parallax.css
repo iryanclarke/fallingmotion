@@ -1,0 +1,559 @@
+/*------------------- Default All Elements ---------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul, li {
+	list-style: none;
+}
+
+#content #welcome li { 
+	display: inline; 
+}
+
+#content #welcome img { 
+	display: inline; 
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------------------- Extended base styles  ---------------------*/
+
+html { 
+	overflow-y: scroll; /* force scrollbar in non-IE */
+	}
+body {
+	background-image:url(../img/bg2.jpg);
+	overflow-x: hidden;
+	height: 12150px;
+	line-height: 1.5;
+	color: #000;
+	font-size: 14px;
+	font-family: Arial,sans-serif;
+}
+h1 {
+	color: #262261;
+}
+a, a:link,
+a:active,
+a:visited {
+	/* -webkit-transition: color 0.25s ease-in-out;
+	-moz-transition: color 0.25s ease-in-out;
+	-o-transition: color 0.25s ease-in-out;
+	transition: color 0.25s ease-in-out; */
+	color:#33CCFF;
+	outline: none;
+	text-decoration:none;
+	}
+	a:hover { 
+		color:#FFF;
+		}
+img { 
+	display:block;
+	}
+p {
+	margin:1em 0;
+	}
+
+/*------------------- Rules (Horizontal) ---------------------*/
+
+hr {
+	margin: 0;
+	border: none;
+	border-top: 1px solid #3b3b3b;
+	border-bottom: 1px solid #3b3b3b;
+	height: 3px;
+}
+
+/*------------------- Top Navigation ---------------------*/
+
+#wrapper {
+	position: relative;
+}
+#branding {
+	width: 100%;
+	background: #262261;
+	z-index: 8;
+	position: fixed;
+	}
+	#branding h1 {
+		padding: 0px 45px;
+		margin: 0 auto;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: bold;
+		font-family: 'Patrick Hand SC', cursive;
+	}
+	
+
+/*------------------- Navigation ---------------------*/
+
+nav#primary {
+	z-index: 8;
+	position: fixed;
+	top: 25%;
+	right: 30px;
+	margin-top: -40px;
+}
+nav#primary li {
+	position: relative;
+	height: 50px;
+}
+nav#primary a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	text-indent: -9999px;  /**************** EDIT HERE TO ADD SOME SHIT ONTOP OF THE IMAGES ************/
+	background: transparent url('../img/nav-dot-test.png') 0px 0px no-repeat;
+}
+nav#primary a:hover, nav#primary a.active {
+	background: transparent url('../img/nav-dot-test.png') 0px -58px no-repeat;
+}
+nav#primary h1 {
+	position: absolute;
+	right: 35px;
+	top: 0px;
+	display: none;
+	padding: 4px 20px 4px 7px;;
+	color: #E9EBEA;
+	white-space: nowrap;
+	background: transparent url('../img/nav-arrow.png') 100% 50% no-repeat;
+	}
+nav.next-prev {
+	margin: 20px 0 0 0;
+	}
+	a.prev,
+	a.next {
+		display: block;
+		width: 15px;
+		height: 11px;
+		text-indent: -9999px;
+		}
+	a.prev {
+		margin: 0 auto 5px auto;
+		background: transparent url('../img/scroll-arrow-up.png') 0 0 no-repeat;
+		}
+		a.prev:hover {
+			background: transparent url('../img/scroll-arrow-up.png') 0 -11px no-repeat;
+			}
+	a.next {
+		margin: 5px auto 0 auto;
+		background: transparent url('../img/scroll-arrow-down.png') -1px 0 no-repeat;
+		}
+		a.next:hover {
+			background: transparent url('../img/scroll-arrow-down.png') -1px -11px no-repeat;
+			}
+			
+			
+
+/*------------------- Parallax ---------------------*/
+
+/* content */
+#content {
+	z-index: 7;
+	position: relative;
+	max-width: 1640px;
+	min-width: 200px;
+	padding: 20px 0px 10px 10px;
+	padding-left: 10px;
+	margin: 0 auto;
+	line-height: 1.7;
+	}
+	#content article {
+		width: 45%;
+		background-color: #F0F0F0;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		border-radius: 30px 180px 30px 30px;
+		border: 7px solid #262261;
+		box-shadow: 0 0 100px #000;
+		min-width: 21em;
+		opacity: 0.85;
+		}
+		#welcome ,
+		#step1,
+		#step2,
+		#step3,
+		#step4,
+		#step5,
+		#step6,
+		#step7,
+		#step8,
+		#step9,
+		#about {
+			padding: 30px 30px 30px 30px;
+			top: 100px;
+			}
+		#content #welcome {
+			width: 75%;
+			position: absolute;
+			top: 120px;
+			left: 100px;
+			min-width: 24em;
+			border-radius: 100px 100px 100px 100px;
+			padding: 30px;
+			}
+			#welcome h1{
+				padding-left:50px;
+			}
+		#step1 {
+			position: absolute;
+			top: 1170px;
+			}
+		#step2 {
+			position: absolute;
+			top: 2200px;
+			}
+		#step3 {
+			position: absolute;
+			top: 3230px;
+			}
+		#step4 {
+			position: absolute;
+			top: 4260px;
+			}
+		#step5 {
+			position: absolute;
+			top: 5500px;
+			}	
+		#step6 {
+			position: absolute;
+			top: 6700px;
+			}
+		#step7 {
+			position: absolute;
+			top: 8000px;
+			}	
+		#step8 {
+			position: absolute;
+			top: 9500px;
+			}
+		#about {
+			position: absolute;
+			top: 11200px;
+			}
+		#content h1 {
+			margin: 0 0 0 0;
+			font-family: 'Patrick Hand SC', cursive;
+			font-size: 60px;
+			font-weight: bold;
+			line-height: 50px;
+			font-stretch:condensed;
+		}
+		#content h2 {
+			margin: 0 0 25px 0;
+			text-transform: uppercase;
+			font-family: 'Patrick Hand SC', cursive;
+			font-size: 30px;
+			font-weight: bold;
+			line-height: 65px;
+			color:#333
+		}	
+		#content h3{
+			margin: 0 0 0 0;
+			font-size: 18px;
+			font-family: Georgia, serif;
+			font-weight: bold;
+			color:#333;
+		}
+		
+/* static parachute */			
+#parachute-man {
+	z-index: 5;
+	position: fixed;
+	left: 50%; 
+	top: 0;
+	width: 940px;
+	margin-left: -570px; /* move left by half element's width */
+	
+	}	
+	#parachute {
+		position: absolute;
+		top: 50px;
+		left: 655px;
+		opacity: 0.0;
+		}	
+	
+/* foreground (robots) */
+#parallax-bg3 {
+	z-index: 3;
+	position: relative;
+	left: 50%; /* align left edge with center of viewport */
+	top: 0;
+	width: 940px;
+	margin-left: -470px; /* move left by half element's width */
+	}
+	/* balloon */
+	#bg3-1 {
+		position: relative;
+		left: 355px;
+		}
+	#bg3-2 {
+		position: absolute;
+		top: 812px;
+		left: -321px;
+		}
+	#bg3-3 {
+		position: absolute;
+		top: 1628px;
+		left: 403px;
+		}
+	#bg3-4 {
+		position: absolute;
+		top: 2700px;
+		left: -85px;
+		}
+/* midground (gears) */
+#parallax-bg2 {
+	z-index: 2;
+	position: fixed;
+	left: 50%; /* align left edge with center of viewport */
+	top: 0;
+	width: 1200px;
+	margin-left: -600px; /* move left by half element's width */
+	}
+	#bg2-1 {
+		position: absolute;
+		top: 162px;
+		left: 200px;
+		}
+	#bg2-2 {
+		position: absolute;
+		top: 300px;
+		left: 1150px;
+		}
+	#bg2-3 {
+		position: absolute;
+		top: 543px;
+		left: -35px;
+		}
+	#bg2-4 {
+		position: absolute;
+		top: 1180px;
+		left: 250px;
+		}
+	#bg2-5 {
+		position: absolute;
+		top: 600px;
+		left: 890px;
+		}
+	#bg1-16 {
+		position: absolute;
+		top: 540px;
+		left: 320px;
+		}
+	#bg1-17 {
+		position: absolute;
+		top: 920px;
+		left: -150px;
+		}
+	#bg1-18 {
+		position: absolute;
+		top: 4900px;
+		left: 450px;
+		}
+	#bg1-19 {
+		position: absolute;
+		top: 4060px;
+		left: 1030px;
+		}
+	#bg1-20 {
+		position: absolute;
+		top: 7900px;
+		left: -320px;
+		}
+	#bg1-21 {
+		position: absolute;
+		top: 9050px;
+		left: -120px;
+		}
+	#bg1-22 {
+		position: absolute;
+		top: 8920px;
+		left: -150px;
+		}	
+	#bg1-8 {
+		position: absolute;
+		top: 20px;
+		left: 450px;
+		}
+	#bg1-9 {
+		position: absolute;
+		top: 20px;
+		left: 1030px;
+		}
+	#bg1-10 {
+		position: absolute;
+		top: 200px;
+		left: -320px;
+		}
+		
+/* background (gears) */
+#parallax-bg1 {
+	z-index: 1;
+	position: fixed;
+	left: 50%; /* align left edge with center of viewport */
+	top: 0;
+	width: 1200px;
+	margin-left: -600px; /* move left by half element's width */
+	}
+	#bg1-1 {
+		position: absolute;
+		top: 1385px;
+		left: 280px;
+		}
+	#bg1-2 {
+		position: absolute;
+		top: 440px;
+		left: 795px;
+		}
+	#bg1-3 {
+		position: absolute;
+		top: 200px;
+		left: 600px;
+		}
+	#bg1-4 {
+		position: absolute;
+		top: 20px;
+		left: 160px;
+		}
+	#bg1-5 {
+		position: absolute;
+		top: 380px;
+		left: 280px;
+		}
+	#bg1-6 {
+		position: absolute;
+		top: 400px;
+		left: -320px;
+		}
+	#bg1-7 {
+		position: absolute;
+		top: 120px;
+		left: -320px;
+		}
+	#bg1-11 {
+		position: absolute;
+		top: 340px;
+		left: -120px;
+		}
+	#bg1-12 {
+		position: absolute;
+		top: 20px;
+		left: -150px;
+		}
+	#bg1-13 {
+		position: absolute;
+		top: 8500px;
+		left: 450px;
+		}
+	#bg1-14 {
+		position: absolute;
+		top: 1000px;
+		left: 930px;
+		}
+	#bg1-15 {
+		position: absolute;
+		top: 1050px;
+		left: 220px;
+		}
+	
+	
+
+section {
+	z-index: 4;
+	position:relative;
+	margin-top: 120px;
+	display:block
+}
+.element {
+	position:absolute;
+	display:block;
+}
+.element div {
+	font-size:30px;
+	height:40px;
+	line-height:40px;
+	text-shadow: 0 0 10px #889473;
+}
+.element#step3reminder {
+	opacity: 1.0;
+	top: 3600px;
+	left:1900px;
+}
+.element#step4reminder {
+	opacity: 1.0;
+	top: 4650px;
+	right: 1700px;
+}
+.element#step5reminder {
+	opacity: 1.0;
+	top : 5950px;
+	left: 1700px;
+}
+.element#step6reminder {
+	opacity: 1.0;
+	top: 700px;
+	right: 1960px;
+}
+.element#step7reminder {
+	opacity: 1.0;
+	top: 8600px;
+	left: 1700px;
+}
+.element#parachuteplane {
+	opacity: 1.0;
+	top: 650px;
+	left:1900px;
+}
+
+
+<!-- PHOTOS -->
+
+ul.galleryclearfix {
+	list-style-type: none;
+}
+ul.galleryclearfix li{
+	display: inline-block;
+	padding-top:15px;
+	padding-left:5px;
+}
